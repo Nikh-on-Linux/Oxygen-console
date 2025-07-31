@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/tooltip";
 import OnedriveIcon from "@/components/icons/onedrive.icons.component";
 import Link from "next/link";
+import FolderDeleteAlert from "@/components/ui/folder.delete.alertbox.ui.component";
 
 function DashboardLayout({
   children,
@@ -61,6 +62,7 @@ function DashboardLayout({
           {children}
         </section>
       </main>
+      <FolderDeleteAlert />
     </section>
   );
 }
