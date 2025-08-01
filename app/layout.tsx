@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interSans.variable} ${figtreeSans.variable} dark w-screen h-screen antialiased`}
+        className={`${interSans.variable} ${figtreeSans.variable} w-screen h-screen antialiased`}
       >
         {children}
       </body>

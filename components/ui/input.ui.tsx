@@ -3,8 +3,10 @@ import React, { useState } from "react";
 
 function Input({
   className,
+  rootId,
   rootClassName,
   startIcon,
+  endIcon,
   type,
   placeholder,
   ...props
@@ -14,13 +16,16 @@ function Input({
   startIcon?: React.ReactNode;
   type?: string;
   placeholder?: string;
+  rootId?: string;
+  endIcon?: React.ReactNode;
 }) {
   const [value, setValue] = useState("");
   return (
     <div
+      id={rootId}
       className={` ${rootClassName} flex flex-row items-center gap-2.5 border-[1px] border-border rounded-md bg-background py-1.5 px-3`}
     >
-      {startIcon}
+      <div>{startIcon}</div>
       <input
         type={type}
         placeholder={placeholder}
@@ -30,6 +35,7 @@ function Input({
           setValue(e.target.value);
         }}
       />
+      <div>{endIcon}</div>
     </div>
   );
 }
