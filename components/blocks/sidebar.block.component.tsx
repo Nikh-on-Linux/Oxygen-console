@@ -40,6 +40,7 @@ function Sidebar() {
             icon={
               <BlankFileIcon className="w-5 h-5 text-secondary-foreground group-hover:text-foreground transition-all" />
             }
+            action={()=>{router.push('?upfi')}}
           />
           <TabItem
             title="Upload Folders"
@@ -47,6 +48,7 @@ function Sidebar() {
             icon={
               <FolderIcon className="w-5 h-5 text-secondary-foreground group-hover:text-foreground transition-all" />
             }
+            action={()=>{router.push('?upfd')}}
           />
           <TabItem
             title="Create a folder"
@@ -54,6 +56,7 @@ function Sidebar() {
             icon={
               <PlusCircleIcon className="w-5 h-5 text-secondary-foreground group-hover:text-foreground transition-all" />
             }
+            action={()=>{router.push('?cf')}}
           />
         </TabGroup>
         <TabGroup title="General">
@@ -133,7 +136,7 @@ function Sidebar() {
           <AlertDialogContent>
             <AlertDialogHeader>
               <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
-              <AlertDialogDescription>
+              <AlertDialogDescription className="text-secondary-foreground font-medium text-sm" >
                 You will be logged out from your account
               </AlertDialogDescription>
             </AlertDialogHeader>

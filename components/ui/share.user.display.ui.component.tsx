@@ -11,7 +11,7 @@ function UserDisplay({
   className?: string;
 }) {
   return (
-    <div className={` ${className} flex flex-row items-center gap-2`}>
+    <div className={` ${className} cursor-pointer flex flex-row items-center gap-2`}>
       <Avatar>
         <AvatarImage src={image} />
         <AvatarFallback>CN</AvatarFallback>

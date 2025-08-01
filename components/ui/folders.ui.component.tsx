@@ -64,8 +64,8 @@ function Folders({ foldername, path }: { foldername: string; path?: string }) {
         <ContextMenuItem>Copy to...</ContextMenuItem>
         <ContextMenuItem>Move to...</ContextMenuItem>
         <ContextMenuSub>
-          <ContextMenuSubTrigger>Share</ContextMenuSubTrigger>
-          <ContextMenuSubContent>
+          <ContextMenuSubTrigger >Share</ContextMenuSubTrigger>
+          <ContextMenuSubContent >
             <Command>
               <CommandInput placeholder="Search users..." />
               <CommandList>
@@ -116,7 +116,7 @@ function Folders({ foldername, path }: { foldername: string; path?: string }) {
           Move to Trash
         </ContextMenuItem>
         <ContextMenuSeparator />
-        <ContextMenuItem>Properties</ContextMenuItem>
+        <ContextMenuItem onClick={()=>{router.push('?fp')}} >Properties</ContextMenuItem>
       </ContextMenuContent>
     </ContextMenu>
   );

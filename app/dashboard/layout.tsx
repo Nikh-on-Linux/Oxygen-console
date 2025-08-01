@@ -16,6 +16,9 @@ import {
 import OnedriveIcon from "@/components/icons/onedrive.icons.component";
 import Link from "next/link";
 import FolderDeleteAlert from "@/components/ui/folder.delete.alertbox.ui.component";
+import FilePropertyBlock from "@/components/blocks/file.propertysheet.block.component";
+import FolderCreateDialogue from "@/components/blocks/folder.create.component";
+import FileUpload from "@/components/blocks/file.upload.block.component";
 
 function DashboardLayout({
   children,
@@ -63,6 +66,9 @@ function DashboardLayout({
         </section>
       </main>
       <FolderDeleteAlert />
+      <FilePropertyBlock />
+      <FolderCreateDialogue />
+      <FileUpload />
     </section>
   );
 }

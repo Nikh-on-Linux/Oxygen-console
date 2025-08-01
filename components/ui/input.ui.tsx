@@ -3,19 +3,23 @@ import React, { useState } from "react";
 
 function Input({
   className,
+  rootClassName,
   startIcon,
   type,
   placeholder,
   ...props
 }: {
   className?: string;
+  rootClassName?: string;
   startIcon?: React.ReactNode;
   type?: string;
   placeholder?: string;
 }) {
   const [value, setValue] = useState("");
   return (
-    <div className="flex flex-row items-center gap-2.5 border-[1px] border-border rounded-md bg-background py-1.5 px-3">
+    <div
+      className={` ${rootClassName} flex flex-row items-center gap-2.5 border-[1px] border-border rounded-md bg-background py-1.5 px-3`}
+    >
       {startIcon}
       <input
         type={type}

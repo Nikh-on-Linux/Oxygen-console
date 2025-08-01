@@ -23,7 +23,7 @@ function FolderDeleteAlert() {
       <AlertDialogContent>
         <AlertDialogHeader>
           <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
-          <AlertDialogDescription>
+          <AlertDialogDescription className="font-medium text-secondary-foreground text-sm" >
             The folder will be moving to Trash bin along with all the files. It
             can be recovered in 30 days
           </AlertDialogDescription>
